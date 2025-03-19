@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Installazione Python</title>
+    <link rel="stylesheet" href="/home/pcmuletto/Scrivania/python/css/style.css"></link>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"></link>
+  </head>
+  <body>
+    <header>
+        <!--pyscript and other sources icons-->
+        <a href="https://docs.python.org/3/using/windows.html" id="header_link">Vesrione completa</a>
+        <a href="#" id="header_link">Pyscript</a>
+        <a href="/home/pcmuletto/Scrivania/python/index.xhtml" id="header_link">Home</a>
+    </header>
+    <h1>Installer per piattaforma</h1>
+    <!---istallation guide with download-->
+    <!--per windows7 installation guide embaddable-->
+      <img src="/home/pcmuletto/Scrivania/python/img/images.jpeg" alt="Windows7">
+      </img>
+      <!---prova attributo download-->
+      <dl>
+        <a href="https://www.python.org/ftp/python/3.8.8/python-3.8.8-embed-amd64.zip" download="python-3.8.8-embed-amd64.zip">Windows7(64-bit)</a>
+        <dl>
+            <a href="https://www.python.org/ftp/python/3.8.8/python-3.8.8-embed-win32.zip" download="python-3.8.8-embed-win32.zip">Windows7(32-bit)</a>
+        </dl>
+      </dl> 
+      <img src="/home/pcmuletto/Scrivania/python/img/win8.jpeg" alt="Windows8">
+      </img>
+      <dl>
+        <a href="https://www.python.org/ftp/python/3.13.2/python-3.13.2-amd64.exe" download="python-3.13.2-amd64.exe">Windows8.1+(64-bit) Installer</a>
+        <dl>
+            <a href="https://www.python.org/ftp/python/3.13.2/python-3.13.2.exe" download="python-3.13.2-amd64.exe">Windows8.1+(32-bit) Installer</a>
+        </dl>
+      </dl>
+    <h2>Risorse utili per completare l'ambiente di sviluppo</h2>
+    <article>
+        Primo link scarica un batch per aprire regedit e disabilitare il limite dei percorsi di 260 caratteri.<br></br>
+        <dl>
+            <a href="file:///home/pcmuletto/Scrivania/python/windows" download="paths.bat" alt="windows" src="file://C:/%userprofile%/Desktop/python/windows">MAX_PATH Limitation</a>
+            <p>valore da impostare a 1:LongPathsEnabled </p>
+        </dl>
+    </article>
+    <article>
+        Ulteriore installazione alternativa via microsoft store.
+        <dl>
+            <a href="https://apps.microsoft.com/search?">Python_Microsoft Store Package</a>
+        </dl>
+        Oppure tramite nuget(.net)
+        <dl>
+            <a href="https://www.nuget.org/">Sito nuget</a>
+        </dl>
+        Windows permette di impostare variabili d'ambiente, temporanee o meno, per python.<br></br>
+        Cio' avviene sia a livello utente che di sistema; lo snippet di seguito da un esempio di come<br></br>
+        impostarle col comando set
+        <br></br>
+    </article>
+    <code>
+      <pre>
+      <dl>C:\>set PATH=C:\Program Files\Python 3.9;%PATH%</dl>
+      <dl>C:\>set PYTHONPATH=%PYTHONPATH%;C:\My_python_lib</dl>
+      <dl>python</dl>
+    </pre>
+    </code>
+  </body>
+</html>
